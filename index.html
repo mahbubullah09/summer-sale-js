@@ -16,7 +16,7 @@
 
 </head>
 
-<body class="bg-[#F8F8F8]">
+<body id="body" class="bg-[#F8F8F8]">
     <!-- banner section -->
 
     <section class=" bg-[#F9F6E2] ">
@@ -52,7 +52,7 @@
 
                     <div class="card-container grid grid-cols-3 gap-6">
 
-                        <div onclick="k_accesorries()" class="card   bg-base-100 shadow-xl rounded cursor-pointer">
+                        <div onclick="k_accesorries()" class=" cursor-pointer card   bg-base-100 shadow-xl rounded cursor-pointer">
                             <figure class=" py-6 bg-slate-200 m-4 rounded-sm ">
                                 <img src="./images/prod1.png" alt="" class="" />
                             </figure>
@@ -73,7 +73,7 @@
 
                         </div>
 
-                        <div class="card  bg-base-100 shadow-xl rounded">
+                        <div onclick="k_accesorries_mini()" class=" cursor-pointer card  bg-base-100 shadow-xl rounded">
                             <figure class=" py-6 bg-slate-200 m-4 rounded-sm ">
                                 <img src="./images/prod2.png" alt="" class="" />
                             </figure>
@@ -87,12 +87,12 @@
                             </div>
 
 
-                            <p class="text-sm font-bold text-[#111] text-center mb-2 ">K. Accessories Mini</p>
-                            <p class=" text-[#111111] text-opacity-50 font-medium text-center mb-4">25.00 TK</p>
+                            <p id="k-accesorries-mini-name" class="text-sm font-bold text-[#111] text-center mb-2 ">K. Accessories Mini</p>
+                            <p id="k-accesorries-mini-price" class=" text-[#111111] text-opacity-50 font-medium text-center mb-4">25.00 TK</p>
 
                         </div>
 
-                        <div class="card   bg-base-100 shadow-xl rounded">
+                        <div onclick="home_cooker()" class="card  cursor-pointer  bg-base-100 shadow-xl rounded">
                             <figure class=" py-6 bg-slate-200 m-4 rounded-sm ">
                                 <img src="./images/prod3.png" alt="" class="" />
                             </figure>
@@ -106,8 +106,8 @@
                             </div>
 
 
-                            <p class="text-sm font-bold text-[#111] text-center mb-2 ">Home Cooker</p>
-                            <p class=" text-[#111111] text-opacity-50 font-medium text-center mb-4">49.00 TK</p>
+                            <p id="home-cooker-name" class="text-sm font-bold text-[#111] text-center mb-2 ">Home Cooker</p>
+                            <p id="home-cooker-price" class=" text-[#111111] text-opacity-50 font-medium text-center mb-4">49.00 TK</p>
 
                         </div>
 
@@ -128,7 +128,7 @@
 
                     <div class="card-container grid grid-cols-3 gap-6">
 
-                        <div class="card   bg-base-100 shadow-xl rounded ">
+                        <div onclick="cap()" class="card cursor-pointer   bg-base-100 shadow-xl rounded ">
                             <figure class=" py-6 bg-slate-200 m-4 rounded-sm ">
                                 <img src="./images/prod4.png" alt="" class="" />
                             </figure>
@@ -142,12 +142,12 @@
                             </div>
 
 
-                            <p class="text-sm font-bold text-[#111] text-center mb-2 ">Sports Back Cap</p>
-                            <p class=" text-[#111111] text-opacity-50 font-medium text-center mb-4">49.00 TK</p>
+                            <p id="cap-name" class="text-sm font-bold text-[#111] text-center mb-2 ">Sports Back Cap</p>
+                            <p id="cap-price" class=" text-[#111111] text-opacity-50 font-medium text-center mb-4">49.00 TK</p>
 
                         </div>
 
-                        <div class="card  bg-base-100 shadow-xl rounded ">
+                        <div onclick="jersey()" class="card cursor-pointer  bg-base-100 shadow-xl rounded ">
                             <figure class=" py-6 bg-slate-200 m-4 rounded-sm ">
                                 <img src="./images/prod5.png" alt="" class="" />
                             </figure>
@@ -161,12 +161,12 @@
                             </div>
 
 
-                            <p class="text-sm font-bold text-[#111] text-center mb-2 ">Full Jersey Set</p>
-                            <p class=" text-[#111111] text-opacity-50 font-medium text-center mb-4">69.00 TK</p>
+                            <p id="jersey-name" class="text-sm font-bold text-[#111] text-center mb-2 ">Full Jersey Set</p>
+                            <p id="jersey-price" class=" text-[#111111] text-opacity-50 font-medium text-center mb-4">69.00 TK</p>
 
                         </div>
 
-                        <div class="card   bg-base-100 shadow-xl rounded ">
+                        <div onclick="cates()" class="card cursor-pointer   bg-base-100 shadow-xl rounded ">
                             <figure class=" py-6 bg-slate-200 m-4 rounded-sm ">
                                 <img src="./images/prod6.png" alt="" class="" />
                             </figure>
@@ -180,8 +180,8 @@
                             </div>
 
 
-                            <p class="text-sm font-bold text-[#111] text-center mb-2 ">Sports cates</p>
-                            <p class=" text-[#111111] text-opacity-50 font-medium text-center mb-4">159.00 TK</p>
+                            <p id="cates-name" class="text-sm font-bold text-[#111] text-center mb-2 ">Sports cates</p>
+                            <p id="cates-price" class=" text-[#111111] text-opacity-50 font-medium text-center mb-4">159.00 TK</p>
 
                         </div>
 
@@ -202,7 +202,7 @@
 
                     <div class="card-container grid grid-cols-3 gap-6">
 
-                        <div class="card   bg-base-100 shadow-xl rounded">
+                        <div onclick="chair()" class="card cursor-pointer   bg-base-100 shadow-xl rounded">
                             <figure class=" py-6 bg-slate-200 m-4 rounded-sm ">
                                 <img src="./images/prod7.png" alt="" class="" />
                             </figure>
@@ -216,14 +216,14 @@
                             </div>
 
 
-                            <p class="text-sm font-bold text-[#111] text-center mb-2 ">Single Relax Chair</p>
-                            <p class=" text-[#111111] text-opacity-50 font-medium text-center mb-4">185.00 TK</p>
+                            <p id="chair-name" class="text-sm font-bold text-[#111] text-center mb-2 ">Single Relax Chair</p>
+                            <p id="chair-price" class=" text-[#111111] text-opacity-50 font-medium text-center mb-4">185.00 TK</p>
 
                         </div>
 
-                        <div class="card  bg-base-100 shadow-xl rounded">
+                        <div onclick="play()" class="card cursor-pointer  bg-base-100 shadow-xl rounded">
                             <figure class=" py-6 bg-slate-200 m-4 rounded-sm ">
-                                <img src="./images/prod1.png" alt="" class="" />
+                                <img src="./images/prod8.png" alt="" class="" />
                             </figure>
 
                             <div class="rating rating-sm  mx-auto my-3 ">
@@ -235,14 +235,14 @@
                             </div>
 
 
-                            <p class="text-sm font-bold text-[#111] text-center mb-2 ">Children play</p>
-                            <p class=" text-[#111111] text-opacity-50 font-medium text-center mb-4">299.00 TK</p>
+                            <p id="play-price" class="text-sm font-bold text-[#111] text-center mb-2 ">Children play</p>
+                            <p id="play-price" class=" text-[#111111] text-opacity-50 font-medium text-center mb-4">299.00 TK</p>
 
                         </div>
 
-                        <div class="card   bg-base-100 shadow-xl rounded">
+                        <div onclick="sofa()" class="card cursor-pointer   bg-base-100 shadow-xl rounded">
                             <figure class=" py-6 bg-slate-200 m-4 rounded-sm ">
-                                <img src="./images/prod1.png" alt="" class="" />
+                                <img src="./images/prod9.png" alt="" class="" />
                             </figure>
 
                             <div class="rating rating-sm  mx-auto my-3 ">
@@ -254,8 +254,8 @@
                             </div>
 
 
-                            <p class="text-sm font-bold text-[#111] text-center mb-2 ">Flexible Sofa</p>
-                            <p class=" text-[#111111] text-opacity-50 font-medium text-center mb-4">339.00 TK</p>
+                            <p id="sofa-name" class="text-sm font-bold text-[#111] text-center mb-2 ">Flexible Sofa</p>
+                            <p id="sofa-price" class=" text-[#111111] text-opacity-50 font-medium text-center mb-4">339.00 TK</p>
 
                         </div>
 
@@ -286,7 +286,7 @@
                     <div class="input flex justify-center ">
                         <input id="couponField" class="bg-slate-100 w-36 text-s px-2" type="text"
                             placeholder="Coupon code">
-                        <button onclick="discount()" id="apply-btn"
+                        <button disabled onclick="discount()" id="apply-btn"
                             class="  bg-slate-500 py-2 px-4 text-white font-semibold rounded-r-md cursor-not-allowed   ">Apply</button>
                     </div>
                 </div>
@@ -317,7 +317,7 @@
                         <hr>
 
                     </div>
-                    <button onclick="my_modal_5.showModal()" id="purchase-btn"
+                    <button disabled onclick="my_modal_5.showModal()" id="purchase-btn"
                         class=" bg-slate-500 cursor-not-allowed  py-2 px-14 mt-4  text-sm ml-1  text-white font-semibold rounded-md   ">Make
                         Purchase</button>
                     <!-- Open the modal using ID.showModal() method -->
@@ -329,7 +329,7 @@
                           <p class="py-0 pt-2 md:py-4">Your Purchase the product</p>
                           <div class="modal-action">
                             <!-- if there is a button in form, it will close the modal -->
-                            <button class="mx-auto text-white bg-[#E527B2] py-1 px-4 rounded-md ">Go Home</button>
+                            <button onclick="location.reload()" class="mx-auto text-white bg-[#E527B2] py-1 px-4 rounded-md ">Go Home</button>
                           </div>
                         </form>
                       </dialog>
