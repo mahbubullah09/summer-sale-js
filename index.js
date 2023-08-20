@@ -113,24 +113,37 @@ function discount() {
 
 }
 
-const resetId=document.getElementById('home');
-resetId.addEventListener('click', function(){
+// const resetId = document.getElementById('home');
+// resetId.addEventListener('click', function () {
+
+//     const resetTotalPrice = document.getElementById('totalPrice');
+//     resetTotalPrice.innerHTML = '00.00';
+
+//     const resetPrice = document.getElementById('price-Id');
+//     resetPrice.innerHTML = '00.00';
+
+//     const resetDuscount = document.getElementById('totalDiscount');
+//     resetDuscount.innerHTML = '00.00';
+
+//     const productId = document.getElementById('product-list');
+//     productId.innerHTML = '';
+
+//     const applyId = document.getElementById('apply-btn');
+
+//     applyId.addAttribute('disabled')
+//     applyId.classList.remove('bg-[#E527B2]')
     
-    const  resetTotalPrice=document.getElementById('totalPrice');
-      resetTotalPrice.innerHTML='00.00';
-  
-    const   resetPrice=document.getElementById('price-Id');
-      resetPrice.innerHTML='00.00';
-  
-    const   resetDuscount=document.getElementById('totalDiscount');
-      resetDuscount.innerHTML='00.00';
-
-      const productId = document.getElementById('product-list');
-      productId.innerHTML='';
-  
+//     applyId.classList.remove('cursor-pointer')
 
 
-})
+//    applyId.classList.add('bg-slate-500')
+
+
+
+
+
+
+// })
 
 
 
@@ -158,7 +171,7 @@ function k_accesorries() {
 
 
 
-function k_accesorries_mini(){
+function k_accesorries_mini() {
     const itemId = document.getElementById('k-accesorries-mini-name');
     const nameOfItem = itemId.innerText;
     const priceId = document.getElementById('k-accesorries-mini-price');
@@ -178,7 +191,7 @@ function k_accesorries_mini(){
 
 
 
-function home_cooker(){
+function home_cooker() {
     const itemId = document.getElementById('home-cooker-name');
     const nameOfItem = itemId.innerText;
     const priceId = document.getElementById('home-cooker-price');
@@ -196,7 +209,7 @@ function home_cooker(){
 
 
 
-function cap(){
+function cap() {
     const itemId = document.getElementById('cap-name');
     const nameOfItem = itemId.innerText;
     const priceId = document.getElementById('cap-price');
@@ -213,7 +226,7 @@ function cap(){
 
 
 
-function jersey(){
+function jersey() {
     const itemId = document.getElementById('jersey-name');
     const nameOfItem = itemId.innerText;
     const priceId = document.getElementById('jersey-price');
@@ -232,7 +245,7 @@ function jersey(){
 
 
 
-function cates(){
+function cates() {
     const itemId = document.getElementById('cates-name');
     const nameOfItem = itemId.innerText;
     const priceId = document.getElementById('cates-price');
@@ -251,7 +264,7 @@ function cates(){
 
 
 
-function chair(){
+function chair() {
     const itemId = document.getElementById('chair-name');
     const nameOfItem = itemId.innerText;
     const priceId = document.getElementById('chair-price');
@@ -270,7 +283,9 @@ function chair(){
 
 
 
-function play(){
+function play() {
+
+    console.log("clicked")
     const itemId = document.getElementById('play-name');
     const nameOfItem = itemId.innerText;
     const priceId = document.getElementById('play-price');
@@ -289,7 +304,7 @@ function play(){
 
 
 
-function sofa(){
+function sofa() {
     const itemId = document.getElementById('sofa-name');
     const nameOfItem = itemId.innerText;
     const priceId = document.getElementById('sofa-price');
