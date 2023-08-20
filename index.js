@@ -115,7 +115,7 @@ function discount() {
 
 const resetId=document.getElementById('home');
 resetId.addEventListener('click', function(){
-    console.log("connect");
+    
     const  resetTotalPrice=document.getElementById('totalPrice');
       resetTotalPrice.innerHTML='00.00';
   
@@ -134,19 +134,7 @@ resetId.addEventListener('click', function(){
 
 
 
-function reset(){
 
-    console.log("connect");
-  const  resetTotalPrice=document.getElementById('totalPrice');
-    resetTotalPrice.innerHTML='';
-
-  const   resetPrice=document.getElementById('price-Id');
-    resetPrice.innerHTML='';
-
-  const   resetDuscount=document.getElementById('totalDiscount');
-    resetDuscount.innerHTML='';
-
-}
 
 
 
