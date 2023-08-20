@@ -25,13 +25,44 @@ function setPrice(itemPrice){
    const totalPriceNumber= price+itemPrice;
    const totalPrice=totalPriceNumber.toFixed(2)
 
-    totalPriceId.innerText=totalPrice;
+    totalPriceId.innerText=totalPrice ;
+
+    
+    
+    const buttonId= document.getElementById('purchase-btn');
+    if(totalPriceNumber > 0){
+        buttonId.classList.remove('cursor-not-allowed')
+        buttonId.classList.remove('bg-slate-500')
+
+        buttonId.classList.add('cursor-pointer')
+        buttonId.classList.add('bg-[#E527B2]')
+        
+        }
+    const applyId= document.getElementById('apply-btn');
+    if(totalPriceNumber >= 200){
+        applyId.classList.remove('cursor-not-allowed')
+        applyId.classList.remove('bg-slate-500')
+
+        applyId.classList.add('cursor-pointer')
+        applyId.classList.add('bg-[#E527B2]')
+        
+        }
+
+
 
 
 }
 
 
 function discount(){
+    const couponId=document.getElementById('couponField');
+    const couponValue= couponId.value ;
+    couponId.value='';
+
+    if(couponValue !== 'SELL200'){
+        return
+    }
+
     let discount=0;
     console.log(discount);
     const totalPriceId=document.getElementById('totalPrice');
@@ -43,7 +74,7 @@ function discount(){
     const discountFormated=discount.toFixed(2);
 
     const discountId=document.getElementById('totalDiscount');
-    discountId.innerText=discountFormated
+    discountId.innerText=discountFormated ;
    
     
 

@@ -282,8 +282,8 @@
 
                     <h4 class="font-semibold text-base mb-2">Have coupon?</h4>
                     <div class="input flex justify-center ">
-                        <input class="bg-slate-100 w-36 text-s px-2" type="text" placeholder="Coupon code">
-                        <button onclick="discount()" class="  bg-[#E527B2] py-2 px-4 text-white font-semibold rounded-r-md ">Apply</button>
+                        <input id="couponField" class="bg-slate-100 w-36 text-s px-2" type="text" placeholder="Coupon code">
+                        <button onclick="discount()" id="apply-btn" class="  bg-slate-500 py-2 px-4 text-white font-semibold rounded-r-md cursor-not-allowed   ">Apply</button>
                     </div>
                 </div>
 
@@ -302,15 +302,15 @@
                     <hr>
                     <div class="price">
                         <p class="text-[#111] text-sm font-medium my-3">Total price: <span
-                                class=" text-[#111111] text-opacity-50 font-medium text-sm "><span id="totalPrice">00.00</span> TK</span></p>
+                                class=" text-[#111111] text-opacity-50 font-medium text-sm "><span id="totalPrice">00.00</span> Tk </span></p>
                         <p class="text-[#111] text-sm font-medium my-3">Discount: <span
-                                class=" text-[#111111] text-opacity-50 font-medium text-sm "><span id="totalDiscount"></span> TK</span></p>
+                                class=" text-[#111111] text-opacity-50 font-medium text-sm "><span id="totalDiscount">00.00</span> TK</span></p>
                         <p class="text-[#111] text-sm font-medium my-3">Total: <span
                                 class=" text-[#111111] text-opacity-50 font-medium text-sm ">00.00 TK</span></p>
                         <hr>
 
                     </div>
-                    <button  class="  bg-[#E527B2] py-2 px-14 mt-4  text-sm ml-1  text-white font-semibold rounded-md  ">Make
+                    <button id="purchase-btn"  class=" bg-slate-500 cursor-not-allowed  py-2 px-14 mt-4  text-sm ml-1  text-white font-semibold rounded-md   ">Make
                         Purchase</button>
 
 
