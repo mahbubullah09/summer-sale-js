@@ -109,6 +109,43 @@ function discount() {
 
 
 
+
+
+}
+
+const resetId=document.getElementById('home');
+resetId.addEventListener('click', function(){
+    console.log("connect");
+    const  resetTotalPrice=document.getElementById('totalPrice');
+      resetTotalPrice.innerHTML='00.00';
+  
+    const   resetPrice=document.getElementById('price-Id');
+      resetPrice.innerHTML='00.00';
+  
+    const   resetDuscount=document.getElementById('totalDiscount');
+      resetDuscount.innerHTML='00.00';
+
+      const productId = document.getElementById('product-list');
+      productId.innerHTML='';
+  
+
+
+})
+
+
+
+function reset(){
+
+    console.log("connect");
+  const  resetTotalPrice=document.getElementById('totalPrice');
+    resetTotalPrice.innerHTML='';
+
+  const   resetPrice=document.getElementById('price-Id');
+    resetPrice.innerHTML='';
+
+  const   resetDuscount=document.getElementById('totalDiscount');
+    resetDuscount.innerHTML='';
+
 }
 
 
