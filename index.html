@@ -66,8 +66,10 @@
                             </div>
 
 
-                            <p id="k-accesorries-name" class="text-sm font-bold text-[#111] text-center mb-2 ">K. Accessories </p>
-                            <p class=" text-[#111111] text-opacity-50 font-medium text-center mb-4"><span id="k-accesorries-price">39.00</span> TK</p>
+                            <p id="k-accesorries-name" class="text-sm font-bold text-[#111] text-center mb-2 ">K.
+                                Accessories </p>
+                            <p class=" text-[#111111] text-opacity-50 font-medium text-center mb-4"><span
+                                    id="k-accesorries-price">39.00</span> TK</p>
 
                         </div>
 
@@ -282,8 +284,10 @@
 
                     <h4 class="font-semibold text-base mb-2">Have coupon?</h4>
                     <div class="input flex justify-center ">
-                        <input id="couponField" class="bg-slate-100 w-36 text-s px-2" type="text" placeholder="Coupon code">
-                        <button onclick="discount()" id="apply-btn" class="  bg-slate-500 py-2 px-4 text-white font-semibold rounded-r-md cursor-not-allowed   ">Apply</button>
+                        <input id="couponField" class="bg-slate-100 w-36 text-s px-2" type="text"
+                            placeholder="Coupon code">
+                        <button onclick="discount()" id="apply-btn"
+                            class="  bg-slate-500 py-2 px-4 text-white font-semibold rounded-r-md cursor-not-allowed   ">Apply</button>
                     </div>
                 </div>
 
@@ -302,16 +306,33 @@
                     <hr>
                     <div class="price">
                         <p class="text-[#111] text-sm font-medium my-3">Total price: <span
-                                class=" text-[#111111] text-opacity-50 font-medium text-sm "><span id="totalPrice">00.00</span> Tk </span></p>
+                                class=" text-[#111111] text-opacity-50 font-medium text-sm "><span
+                                    id="totalPrice">00.00</span> Tk </span></p>
                         <p class="text-[#111] text-sm font-medium my-3">Discount: <span
-                                class=" text-[#111111] text-opacity-50 font-medium text-sm "><span id="totalDiscount">00.00</span> TK</span></p>
+                                class=" text-[#111111] text-opacity-50 font-medium text-sm "><span
+                                    id="totalDiscount">00.00</span> TK</span></p>
                         <p class="text-[#111] text-sm font-medium my-3">Total: <span
-                                class=" text-[#111111] text-opacity-50 font-medium text-sm "><span id="price-Id">00.00</span> TK</span></p>
+                                class=" text-[#111111] text-opacity-50 font-medium text-sm "><span
+                                    id="price-Id">00.00</span> TK</span></p>
                         <hr>
 
                     </div>
-                    <button id="purchase-btn"  class=" bg-slate-500 cursor-not-allowed  py-2 px-14 mt-4  text-sm ml-1  text-white font-semibold rounded-md   ">Make
+                    <button onclick="my_modal_5.showModal()" id="purchase-btn"
+                        class=" bg-slate-500 cursor-not-allowed  py-2 px-14 mt-4  text-sm ml-1  text-white font-semibold rounded-md   ">Make
                         Purchase</button>
+                    <!-- Open the modal using ID.showModal() method -->
+
+                    <dialog id="my_modal_5" class="modal text-center modal-bottom sm:modal-middle">
+                        <form method="dialog" class="modal-box">
+                            <img class="mx-auto w-24 mt-4" src="./images/congo.png" alt="">
+                          <h3 class="font-bold text-4xl mt-2 ">Congratulations</h3>
+                          <p class="py-0 pt-2 md:py-4">Your Purchase the product</p>
+                          <div class="modal-action">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="mx-auto text-white bg-[#E527B2] py-1 px-4 rounded-md ">Go Home</button>
+                          </div>
+                        </form>
+                      </dialog>
 
 
                 </div>
