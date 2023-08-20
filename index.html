@@ -30,7 +30,7 @@
 
                 <div class="promo flex justify-center gap-4 mt-10 items-center ">
                     <p class="text-[#111] text-sm font-medium">Use Promo Code</p>
-                    <button class="text-white bg-[#E527B2] py-1 px-4 rounded-md hover:bg-slate-600">SELL200</button>
+                    <button class="text-white bg-[#E527B2] py-1 px-4 rounded-md ">SELL200</button>
                 </div>
             </div>
             <div class="right-container flex-1 my-10 ">
@@ -52,7 +52,7 @@
 
                     <div class="card-container grid grid-cols-3 gap-6">
 
-                        <div class="card   bg-base-100 shadow-xl rounded">
+                        <div onclick="k_accesorries()" class="card   bg-base-100 shadow-xl rounded cursor-pointer">
                             <figure class=" py-6 bg-slate-200 m-4 rounded-sm ">
                                 <img src="./images/prod1.png" alt="" class="" />
                             </figure>
@@ -66,8 +66,8 @@
                             </div>
 
 
-                            <p class="text-sm font-bold text-[#111] text-center mb-2 ">K. Accessories</p>
-                            <p class=" text-[#111111] text-opacity-50 font-medium text-center mb-4">39.00 TK</p>
+                            <p id="k-accesorries-name" class="text-sm font-bold text-[#111] text-center mb-2 ">K. Accessories </p>
+                            <p class=" text-[#111111] text-opacity-50 font-medium text-center mb-4"><span id="k-accesorries-price">39.00</span> TK</p>
 
                         </div>
 
@@ -85,7 +85,7 @@
                             </div>
 
 
-                            <p class="text-sm font-bold text-[#111] text-center mb-2 ">K. Accessories</p>
+                            <p class="text-sm font-bold text-[#111] text-center mb-2 ">K. Accessories Mini</p>
                             <p class=" text-[#111111] text-opacity-50 font-medium text-center mb-4">25.00 TK</p>
 
                         </div>
@@ -278,37 +278,48 @@
 
 
             <div class="purchase col-span-3 mr-2 mt-9">
-                <div class="  bg-base-100 shadow-xl rounded p-4">              
-                            
-                <h4 class="font-semibold text-base mb-2">Have coupon?</h4>
-                <div class="input flex justify-center ">
-                <input class="bg-slate-100 w-36 text-s px-2" type="text" placeholder="Coupon code">
-                <button class="  bg-[#E527B2] py-2 px-4 text-white font-semibold rounded-r-md hover:bg-slate-600">Apply</button>
-            </div>
-            </div>
+                <div class="  bg-base-100 shadow-xl rounded p-4">
 
-            <div class="make-puschase bg-base-100 shadow-xl rounded p-4 mt-6">
-
-                <div class="items text-[#111] text-sm font-medium my-3">
-
+                    <h4 class="font-semibold text-base mb-2">Have coupon?</h4>
+                    <div class="input flex justify-center ">
+                        <input class="bg-slate-100 w-36 text-s px-2" type="text" placeholder="Coupon code">
+                        <button onclick="discount()" class="  bg-[#E527B2] py-2 px-4 text-white font-semibold rounded-r-md ">Apply</button>
+                    </div>
                 </div>
-                <hr>
-                <div class="price">
-                    <p class="text-[#111] text-sm font-medium my-3">Total price:</p>
-                    <p class="text-[#111] text-sm font-medium my-3">Discount :</p>
-                    <p class="text-[#111] text-sm font-medium my-3">Total:</p>
+
+                <div class="make-puschase bg-base-100 shadow-xl rounded p-4 mt-6">
+
+
+                    <div id="product-list" class="items text-[#111] text-sm font-medium my-3">
+
+
+
+
+                    </div>
+
+
+
                     <hr>
+                    <div class="price">
+                        <p class="text-[#111] text-sm font-medium my-3">Total price: <span
+                                class=" text-[#111111] text-opacity-50 font-medium text-sm "><span id="totalPrice">00.00</span> TK</span></p>
+                        <p class="text-[#111] text-sm font-medium my-3">Discount: <span
+                                class=" text-[#111111] text-opacity-50 font-medium text-sm "><span id="totalDiscount"></span> TK</span></p>
+                        <p class="text-[#111] text-sm font-medium my-3">Total: <span
+                                class=" text-[#111111] text-opacity-50 font-medium text-sm ">00.00 TK</span></p>
+                        <hr>
+
+                    </div>
+                    <button  class="  bg-[#E527B2] py-2 px-14 mt-4  text-sm ml-1  text-white font-semibold rounded-md  ">Make
+                        Purchase</button>
+
 
                 </div>
-                <button class="  bg-[#E527B2] py-2 px-14 mt-4  text-sm ml-1  text-white font-semibold rounded-md hover:bg-slate-600 ">Make Purchase</button>
-
-
-            </div>
 
 
 
 
-                
+
             </div>
 
 
@@ -325,6 +336,7 @@
 
 
     </main>
+    <script src="index.js"></script>
 
 
 
