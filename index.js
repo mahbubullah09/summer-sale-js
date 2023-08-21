@@ -80,7 +80,8 @@ function discount() {
     couponId.value = '';
 
     if (couponValue !== 'SELL200') {
-        return
+    alert("coupon code is not valid");
+    return;
     }
 
     let discount = 0;
@@ -104,46 +105,56 @@ function discount() {
 
     priceId.innerText = priceFormatted;
 
-
-
-
-
-
-
-
 }
 
-// const resetId = document.getElementById('home');
-// resetId.addEventListener('click', function () {
-
-//     const resetTotalPrice = document.getElementById('totalPrice');
-//     resetTotalPrice.innerHTML = '00.00';
-
-//     const resetPrice = document.getElementById('price-Id');
-//     resetPrice.innerHTML = '00.00';
-
-//     const resetDuscount = document.getElementById('totalDiscount');
-//     resetDuscount.innerHTML = '00.00';
-
-//     const productId = document.getElementById('product-list');
-//     productId.innerHTML = '';
-
-//     const applyId = document.getElementById('apply-btn');
-
-//     applyId.addAttribute('disabled')
-//     applyId.classList.remove('bg-[#E527B2]')
-    
-//     applyId.classList.remove('cursor-pointer')
 
 
-//    applyId.classList.add('bg-slate-500')
+ 
 
 
 
+// reset attribute 
 
 
 
-// })
+const resetId = document.getElementById('home');
+resetId.addEventListener('click', function () {
+
+    const resetTotalPrice = document.getElementById('totalPrice');
+    resetTotalPrice.innerHTML = '00.00';
+
+    const resetPrice = document.getElementById('price-Id');
+    resetPrice.innerHTML = '00.00';
+
+    const resetDuscount = document.getElementById('totalDiscount');
+    resetDuscount.innerHTML = '00.00';
+
+    const productId = document.getElementById('product-list');
+    productId.innerHTML = '';
+
+
+    const purchaseId = document.getElementById('purchase-btn');
+    purchaseId.classList.remove('cursor-pointer')
+    purchaseId.classList.remove('bg-[#E527B2]')
+
+    purchaseId.setAttribute("disabled", "");
+    purchaseId.classList.add('bg-slate-500');
+
+
+    const applyId = document.getElementById('apply-btn');
+    applyId .classList.remove('cursor-pointer')
+    applyId .classList.remove('bg-[#E527B2]')
+
+    applyId .setAttribute("disabled", "");
+    applyId .classList.add('bg-slate-500');
+
+    const couponId = document.getElementById('couponField');
+   
+    couponId.value = '';
+   
+
+})
+
 
 
 
